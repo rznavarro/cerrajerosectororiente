@@ -28,6 +28,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 84px;
+  overflow-x: hidden;
 }
 
 body {
@@ -38,6 +39,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img {
@@ -1090,8 +1092,8 @@ p {
 
 .whatsapp-float {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  right: 20px;
   z-index: 200;
   width: 60px;
   height: 60px;
@@ -1173,7 +1175,7 @@ p {
 
 @media (max-width: 720px) {
   .nav-links,
-  .header-phone {
+  .header-actions {
     display: none;
   }
 
