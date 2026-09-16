@@ -987,14 +987,23 @@ p {
   flex-shrink: 0;
 }
 
+.contact-list a > div,
+.contact-list address > div {
+  min-width: 0;
+}
+
 .contact-list strong {
   display: block;
   font-size: 0.95rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .contact-list span {
   color: var(--text-muted);
   font-size: 0.82rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .contact-map-card {
@@ -1092,6 +1101,8 @@ p {
   color: var(--text-muted);
   font-size: 0.9rem;
   transition: color 0.15s ease;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .footer-col a:hover {
