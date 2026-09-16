@@ -296,20 +296,33 @@ p {
   overflow: hidden;
 }
 
-.hero__bg {
+.hero__media {
   position: absolute;
   inset: 0;
+  z-index: 0;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
-  z-index: 0;
 }
 
-.hero__bg::after {
-  content: "";
+.hero__bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero__overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(13, 17, 23, 0.88) 0%, rgba(13, 17, 23, 0.94) 55%, var(--bg) 100%),
     linear-gradient(90deg, rgba(13, 17, 23, 0.65) 0%, rgba(13, 17, 23, 0.2) 65%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__bg-video {
+    display: none;
+  }
 }
 
 .hero .container {
