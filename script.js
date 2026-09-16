@@ -103,6 +103,24 @@
     });
   }
 
+  /* Acordeón de preguntas frecuentes */
+  document.querySelectorAll(".faq-item").forEach(function (item) {
+    var question = item.querySelector(".faq-question");
+    if (!question) return;
+    question.addEventListener("click", function () {
+      var wasOpen = item.classList.contains("open");
+      document.querySelectorAll(".faq-item.open").forEach(function (openItem) {
+        openItem.classList.remove("open");
+        var btn = openItem.querySelector(".faq-question");
+        if (btn) btn.setAttribute("aria-expanded", "false");
+      });
+      if (!wasOpen) {
+        item.classList.add("open");
+        question.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+
   /* Año actual en el footer */
   var yearEl = document.getElementById("current-year");
   if (yearEl) {
