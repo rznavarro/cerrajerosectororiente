@@ -1219,7 +1219,18 @@ p {
 
 @media (max-width: 720px) {
   .hero {
-    padding: 90px 0 60px;
+    padding: 0 0 48px;
+  }
+
+  .hero__media {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+  }
+
+  .hero__content {
+    padding-top: 32px;
   }
 
   .services-grid,
