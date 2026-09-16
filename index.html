@@ -222,7 +222,7 @@
   <section class="hero" id="inicio">
     <div class="hero__media" style="background-image:url('img/hero-poster.jpg');">
       <video class="hero__bg-video" autoplay muted loop playsinline preload="auto" poster="img/hero-poster.jpg" aria-hidden="true">
-        <source src="hero.mp4" type="video/mp4">
+        <source src="hero.mp4" type="video/mp4" media="(min-width: 721px)">
       </video>
       <div class="hero__overlay"></div>
     </div>
@@ -286,7 +286,7 @@
 
       <div class="services-grid">
         <article class="service-card reveal">
-          <div class="service-card__media" style="background-image:url('img/servicio-apertura-casas.jpg');" role="img" aria-label="Cerrajero abriendo una puerta de emergencia de noche con linterna"></div>
+          <div class="service-card__media"><img src="img/servicio-apertura-casas.jpg" alt="Cerrajero abriendo una puerta de emergencia de noche con linterna" width="900" height="490" loading="lazy" decoding="async" /></div>
           <div class="service-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
           </div>
@@ -298,7 +298,7 @@
         </article>
 
         <article class="service-card reveal">
-          <div class="service-card__media" style="background-image:url('img/servicio-apertura-vehiculos.jpg');" role="img" aria-label="Apertura de la puerta de un vehículo de noche sin dañar la carrocería"></div>
+          <div class="service-card__media"><img src="img/servicio-apertura-vehiculos.jpg" alt="Apertura de la puerta de un vehículo de noche sin dañar la carrocería" width="900" height="490" loading="lazy" decoding="async" /></div>
           <div class="service-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm14 0a2 2 0 1 0 4 0 2 2 0 0 0-4 0ZM3 17l1.5-5.5A2 2 0 0 1 6.4 10h11.2a2 2 0 0 1 1.9 1.5L21 17"/></svg>
           </div>
@@ -310,7 +310,7 @@
         </article>
 
         <article class="service-card reveal">
-          <div class="service-card__media" style="background-image:url('img/servicio-cerraduras-electronicas.jpg');" role="img" aria-label="Cerradura electrónica con teclado numérico instalada en una puerta"></div>
+          <div class="service-card__media"><img src="img/servicio-cerraduras-electronicas.jpg" alt="Cerradura electrónica con teclado numérico instalada en una puerta" width="900" height="490" loading="lazy" decoding="async" /></div>
           <div class="service-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 14v3"/></svg>
           </div>
@@ -322,7 +322,7 @@
         </article>
 
         <article class="service-card reveal">
-          <div class="service-card__media" style="background-image:url('img/servicio-copia-llaves.jpg');" role="img" aria-label="Llave insertada en la cerradura de una puerta, duplicado de llaves"></div>
+          <div class="service-card__media"><img src="img/servicio-copia-llaves.jpg" alt="Llave insertada en la cerradura de una puerta, duplicado de llaves" width="900" height="490" loading="lazy" decoding="async" /></div>
           <div class="service-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="4"/><path d="m11 11 9 9M17 17l2-2M20 14l2 2"/></svg>
           </div>
@@ -334,7 +334,7 @@
         </article>
 
         <article class="service-card reveal">
-          <div class="service-card__media" style="background-image:url('img/servicio-cambio-chapas.jpg');" role="img" aria-label="Cerrajero instalando una chapa de seguridad nueva en una puerta"></div>
+          <div class="service-card__media"><img src="img/servicio-cambio-chapas.jpg" alt="Cerrajero instalando una chapa de seguridad nueva en una puerta" width="900" height="490" loading="lazy" decoding="async" /></div>
           <div class="service-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="14" height="16" rx="1"/><circle cx="13" cy="12" r="1"/></svg>
           </div>
@@ -377,7 +377,8 @@
           </div>
         </div>
 
-        <div class="skills reveal" style="background-image:url('img/habilidades-cerrajeria.jpg');">
+        <div class="skills reveal">
+          <img class="skills__bg" src="img/habilidades-cerrajeria.jpg" alt="Cerrajero manipulando con precisión el cilindro de una cerradura" width="900" height="490" loading="lazy" decoding="async" />
           <div class="skills__overlay"></div>
           <h3>Nuestras habilidades</h3>
           <p>Nos capacitamos constantemente para dominar cada tipo de cerradura y sistema de seguridad.</p>
@@ -403,9 +404,9 @@
   <section class="section" style="padding-top:0;">
     <div class="container">
       <div class="gallery-grid">
-        <div class="gallery-item reveal" style="background-image:url('img/galeria-mecanismo.jpg');" role="img" aria-label="Mecanismo interno de una cerradura de cilindro"></div>
-        <div class="gallery-item reveal" style="background-image:url('img/galeria-herramientas.jpg');" role="img" aria-label="Maletín con herramientas profesionales de cerrajería"></div>
-        <div class="gallery-item gallery-item--tall reveal" style="background-image:url('img/galeria-acceso-comercial.jpg');" role="img" aria-label="Control de acceso con tarjeta en puerta de oficina"></div>
+        <div class="gallery-item reveal"><img src="img/galeria-mecanismo.jpg" alt="Mecanismo interno de una cerradura de cilindro" width="900" height="490" loading="lazy" decoding="async" /></div>
+        <div class="gallery-item reveal"><img src="img/galeria-herramientas.jpg" alt="Maletín con herramientas profesionales de cerrajería" width="900" height="490" loading="lazy" decoding="async" /></div>
+        <div class="gallery-item gallery-item--tall reveal"><img src="img/galeria-acceso-comercial.jpg" alt="Control de acceso con tarjeta en puerta de oficina" width="848" height="1264" loading="lazy" decoding="async" /></div>
       </div>
     </div>
   </section>
