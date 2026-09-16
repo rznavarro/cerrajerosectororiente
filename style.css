@@ -690,12 +690,65 @@ p {
   gap: 12px;
 }
 
-.testimonial-author img {
+.testimonial-author img,
+.testimonial-avatar {
   width: 46px;
   height: 46px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--accent);
+  flex-shrink: 0;
+}
+
+.testimonial-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #1a1305;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.testimonial-card:nth-child(6n + 1) .testimonial-avatar { background: #d9a441; border-color: #d9a441; }
+.testimonial-card:nth-child(6n + 2) .testimonial-avatar { background: #f0c674; border-color: #f0c674; }
+.testimonial-card:nth-child(6n + 3) .testimonial-avatar { background: #c98a4b; border-color: #c98a4b; }
+.testimonial-card:nth-child(6n + 4) .testimonial-avatar { background: #e0b563; border-color: #e0b563; }
+.testimonial-card:nth-child(6n + 5) .testimonial-avatar { background: #b9832c; border-color: #b9832c; }
+.testimonial-card:nth-child(6n + 6) .testimonial-avatar { background: #cc7a3d; border-color: #cc7a3d; }
+
+/* ==========================================================================
+   Badge de calificación (testimonios)
+   ========================================================================== */
+
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 10px 18px;
+}
+
+.rating-badge svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent);
+}
+
+.rating-badge__score {
+  font-family: var(--font-data);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.rating-badge__label {
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }
 
 .testimonial-author strong {
