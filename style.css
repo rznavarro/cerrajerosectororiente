@@ -315,8 +315,8 @@ p {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(13, 17, 23, 0.88) 0%, rgba(13, 17, 23, 0.94) 55%, var(--bg) 100%),
-    linear-gradient(90deg, rgba(13, 17, 23, 0.65) 0%, rgba(13, 17, 23, 0.2) 65%);
+  background: linear-gradient(180deg, rgba(13, 17, 23, 0.35) 0%, rgba(13, 17, 23, 0.55) 60%, var(--bg) 100%),
+    linear-gradient(90deg, rgba(13, 17, 23, 0.6) 0%, rgba(13, 17, 23, 0.1) 60%);
 }
 
 @media (prefers-reduced-motion: reduce) {
